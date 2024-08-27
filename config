@@ -1,0 +1,7 @@
+Host rpi*
+  HostName rpi5.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s ant1
