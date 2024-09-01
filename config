@@ -1,7 +1,88 @@
-Host rpi*
+Host rpi5
   HostName rpi5.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s ant1
+
+Host turing1
+  HostName turing1.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s turing
+
+Host turing2
+  HostName turing2.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t turing
+  
+Host turing3
+  HostName turing3.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t turing
+  
+Host turing4
+  HostName turing4.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t turing
+  
+Host super1
+  HostName super1.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
+Host super2
+  HostName super2.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
+Host super3
+  HostName super3.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
+Host super4
+  HostName super4.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
+Host super5
+  HostName super5.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
+Host super6
+  HostName super6.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -t super
+  
