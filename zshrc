@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
 alias vi=nvim
-alias functon ff() {
+functon ff() {
 fzf --preview="bat --color=always {}" --query="$1"
 } 
 
