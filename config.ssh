@@ -20,7 +20,7 @@ Host turing2
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t turing
+  RemoteCommand tmux new -A -s turing
   
 Host turing3
   HostName turing3.local
@@ -28,7 +28,7 @@ Host turing3
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t turing
+  RemoteCommand tmux new -A -s turing
   
 Host turing4
   HostName turing4.local
@@ -36,7 +36,7 @@ Host turing4
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t turing
+  RemoteCommand tmux new -A -s turing
   
 Host super1
   HostName super1.local
@@ -44,7 +44,7 @@ Host super1
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
 Host super2
   HostName super2.local
@@ -52,7 +52,7 @@ Host super2
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
 Host super3
   HostName super3.local
@@ -60,7 +60,7 @@ Host super3
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
 Host super4
   HostName super4.local
@@ -68,7 +68,7 @@ Host super4
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
 Host super5
   HostName super5.local
@@ -76,7 +76,7 @@ Host super5
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
 Host super6
   HostName super6.local
@@ -84,5 +84,5 @@ Host super6
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
-  RemoteCommand tmux new -A -t super
+  RemoteCommand tmux new -A -s super
   
