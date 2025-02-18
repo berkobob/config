@@ -1,19 +1,6 @@
-Host rpi5
-  HostName rpi5.local
-  User pi
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s default
-
-Host colourpi
-  HostName colourpi.local
-  User pi
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s default
-
+#
+# Turing
+#
 Host turing1
   HostName turing1.local
   User pi
@@ -29,7 +16,7 @@ Host turing2
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s turing
-  
+
 Host turing3
   HostName turing3.local
   User pi
@@ -37,7 +24,7 @@ Host turing3
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s turing
-  
+
 Host turing4
   HostName turing4.local
   User pi
@@ -45,7 +32,10 @@ Host turing4
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s turing
-  
+
+#
+# Super
+#
 Host super1
   HostName super1.local
   User pi
@@ -53,7 +43,7 @@ Host super1
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
+
 Host super2
   HostName super2.local
   User pi
@@ -61,7 +51,7 @@ Host super2
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
+
 Host super3
   HostName super3.local
   User pi
@@ -69,7 +59,7 @@ Host super3
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
+
 Host super4
   HostName super4.local
   User pi
@@ -77,7 +67,7 @@ Host super4
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
+
 Host super5
   HostName super5.local
   User pi
@@ -85,7 +75,7 @@ Host super5
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
+
 Host super6
   HostName super6.local
   User pi
@@ -93,17 +83,152 @@ Host super6
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s super
-  
-Host camerapi
-  HostName camerapi.local
+
+#
+# Pi Rack
+#
+Host icetower
+  HostName icetower.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s rackpi
+
+Host bigfanpi
+  HostName bigfanpi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s rackpi
+
+Host rpi5
+  HostName rpi5.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s rackpi
+
+Host jetson
+  HostName jetson.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s rackpi
+
+#
+# Rack
+#
+Host ubumtu
+  HostName 192.168.1.5
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s rackpi
+
+#
+# Tower
+#
+Host rpitop
+  HostName rpitop.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s tower
+
+Host rpi3
+  HostName rpi3.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s tower
+
+Host rpi2
+  HostName rpi2.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s tower
+
+Host rpi1
+  HostName rpi1.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s tower
+
+#
+# Pis
+#
+Host naspi
+  HostName naspi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+Host poepi
+  HostName poepi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+Host picade
+  HostName picade.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+Host visionkit
+  HostName visionkit.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+Host workingpi
+  HostName workingpi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+Host voicekit
+  HostName voicekit.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes 
+  RemoteCommand tmux new -A -s apppi
+
+#
+# Zeros
+#
+Host rpi01
+  HostName rpi01.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s rpi0
 
-Host rpi0wh
-  HostName rpi0wh.local
+Host rpi02
+  HostName rpi02.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
@@ -118,52 +243,19 @@ Host usbpi
   RequestTTY yes 
   RemoteCommand tmux new -A -s rpi0
 
-Host rpi01
-  HostName rpi01.local
+Host rpi0wh
+  HostName rpi0wh.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s rpi0
 
-
-Host rpi02
-  HostName rpi02.local
+Host camerapi
+  HostName camerapi.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   RequestTTY yes 
   RemoteCommand tmux new -A -s rpi0
 
-
-Host bigfanpi
-  HostName bigfanpi.local
-  User pi
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s rpi0
-
-Host jetson
-  HostName jetson.local
-  User nano
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s rpi0
-
-Host icetower
-  HostName icetower.local
-  User pi
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s rpi0
-
-Host ubumtu
-  HostName 192.168.1.5
-  User pi
-  IdentityFile ~/.ssh/id_ed25519
-  IdentitiesOnly yes
-  RequestTTY yes 
-  RemoteCommand tmux new -A -s rpi0

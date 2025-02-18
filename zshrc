@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin:/Users/antoine/Library/Flutter/bin"
 # ZSH_THEME="afowler"
 ZSH_THEME="robbyrussell"
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
@@ -36,3 +36,8 @@ function y() {
 }
 
 export EDITOR="vi"
+
+LFCD="/Users/antoine/.config/ls/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
