@@ -1,12 +1,13 @@
 #
 # Turing
 #
+
 Host turing1
   HostName turing1.local
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s turing
 
 Host turing2
@@ -14,7 +15,7 @@ Host turing2
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s turing
 
 Host turing3
@@ -22,7 +23,7 @@ Host turing3
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s turing
 
 Host turing4
@@ -30,7 +31,7 @@ Host turing4
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s turing
 
 #
@@ -41,7 +42,7 @@ Host super1
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 Host super2
@@ -49,7 +50,7 @@ Host super2
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 Host super3
@@ -57,7 +58,7 @@ Host super3
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 Host super4
@@ -65,7 +66,7 @@ Host super4
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 Host super5
@@ -73,7 +74,7 @@ Host super5
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 Host super6
@@ -81,7 +82,7 @@ Host super6
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s super
 
 #
@@ -92,7 +93,7 @@ Host icetower
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rackpi
 
 Host bigfanpi
@@ -100,7 +101,7 @@ Host bigfanpi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rackpi
 
 Host rpi5
@@ -108,7 +109,7 @@ Host rpi5
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rackpi
 
 Host jetson
@@ -116,7 +117,7 @@ Host jetson
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rackpi
 
 #
@@ -127,7 +128,7 @@ Host ubumtu
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rackpi
 
 #
@@ -138,7 +139,7 @@ Host rpitop
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s tower
 
 Host rpi3
@@ -146,7 +147,7 @@ Host rpi3
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s tower
 
 Host rpi2
@@ -154,7 +155,7 @@ Host rpi2
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s tower
 
 Host rpi1
@@ -162,7 +163,7 @@ Host rpi1
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s tower
 
 #
@@ -173,7 +174,7 @@ Host naspi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 Host poepi
@@ -181,7 +182,7 @@ Host poepi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 Host picade
@@ -189,7 +190,7 @@ Host picade
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 Host visionkit
@@ -197,7 +198,7 @@ Host visionkit
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 Host workingpi
@@ -205,7 +206,7 @@ Host workingpi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 Host voicekit
@@ -213,7 +214,7 @@ Host voicekit
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
 #
@@ -224,7 +225,7 @@ Host rpi01
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
 
 Host rpi02
@@ -232,7 +233,7 @@ Host rpi02
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
 
 Host usbpi
@@ -240,7 +241,7 @@ Host usbpi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
 
 Host rpi0wh
@@ -248,7 +249,7 @@ Host rpi0wh
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
 
 Host camerapi
@@ -256,6 +257,5 @@ Host camerapi
   User pi
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
-  RequestTTY yes 
+  RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
-

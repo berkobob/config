@@ -41,3 +41,5 @@ LFCD="/Users/antoine/.config/ls/lfcd.sh"                                #  pre-b
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
+
+bindkey -v
