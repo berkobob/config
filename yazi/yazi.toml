@@ -88,6 +88,10 @@ image_bound      = [ 0, 0 ]
 suppress_preload = false
 
 [plugin]
+prepend_previewers = [ 
+  { mime = "image/tiff", run = "magick" }, 
+  { mime = "application/pdf", run = "~/.config/yazi/qlpreview.sh {}" },
+]
 
 fetchers = [
 	# Mimetype
