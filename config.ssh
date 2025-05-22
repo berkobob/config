@@ -217,6 +217,30 @@ Host voicekit
   RequestTTY yes
   RemoteCommand tmux new -A -s apppi
 
+Host gameboy
+  HostName gameboy.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes
+  RemoteCommand tmux new -A -s apppi
+
+Host gamepi
+  HostName gamepi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes
+  RemoteCommand tmux new -A -s apppi
+
+Host inkypi
+  HostName inkypi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes
+  RemoteCommand tmux new -A -s apppi
+
 #
 # Zeros
 #
@@ -259,3 +283,21 @@ Host camerapi
   IdentitiesOnly yes
   RequestTTY yes
   RemoteCommand tmux new -A -s rpi0
+
+Host campi
+  HostName campi.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes
+  RemoteCommand tmux new -A -s rpi0
+
+#
+# Others
+#
+Host macarch
+  HostName macarch.local
+  User pi
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  RequestTTY yes

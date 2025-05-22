@@ -1,2 +1,44 @@
-map . set hidden!
+qset ignorecase true
+set icons true
+set previewer imgcat
+# set previewer /opt/homebrew/bin/bat
+set scrolloff 10
 
+cmd mkdir ${{
+  printf "Directory name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd unarchive ${{
+  case "$f" in
+    *.zip) unzip "$f" ;;
+    *.tar.gz) tar -xvzf "$f" ;;
+    *.tar.bz2) tar -xjvf "$f" ;;
+    *.tar) tar -xvf "$f" ;;
+    *) echo "Unsupported format" ;;
+  esac
+}}
+
+cmd fzf_search ${{
+    cmd="rg --column --line-number --no-heading --color=always --smart-case"
+    fzf --ansi --disabled --layout=reverse --header="Search in files" --delimiter=: \
+        --bind="start:reload([ -n {q} ] && $cmd -- {q} || true)" \
+        --bind="change:reload([ -n {q} ] && $cmd -- {q} || true)" \
+        --bind='enter:become(lf -remote "send $id select \"$(printf "%s" {1} | sed '\''s/\\/\\\\/g;s/"/\\"/g'\'')\"")' \
+        --preview='cat -- {1}' # Use your favorite previewer here (bat, source-highlight, etc.), for example:
+        #--preview-window='+{2}-/2' \
+        #--preview='bat --color=always --highlight-line={2} -- {1}'
+        # Alternatively you can even use the same previewer you've configured for lf
+        #--preview='~/.config/lf/cleaner; ~/.config/lf/previewer {1} "$FZF_PREVIEW_COLUMNS" "$FZF_PREVIEW_LINES" "$FZF_PREVIEW_LEFT" "$FZF_PREVIEW_TOP"'
+}}
+map gs :fzf_search
+map DD delete
+map p paste
+map x cut
+map y copy
+map <enter> open
+map md mkdir
+map aa cd ~ && quit
+map . set hidden!
+map f $$EDITOR $(fzf)

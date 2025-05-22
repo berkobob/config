@@ -21,6 +21,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
+alias lew="python3 ~/dev/lew-llm-cli/app/command.py"
 alias vi=nvim
 functon ff() {
 fzf --preview="bat --color=always {}" --query="$1"
@@ -43,3 +44,18 @@ if [ -f "$LFCD" ]; then
 fi
 
 bindkey -v
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --zsh)"
+# --- setup fzf theme ---
+fg="#CBE0F0"
+bg="#011628"
+bg_highlight="#143652"
+purple="#B388FF"
+blue="#06BCE4"
+cyan="#2CF9ED"
+
+export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+export MANPAGER='nvim +Man!'
+# autoload -Uz tetris
+
